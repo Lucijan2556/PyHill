@@ -2,14 +2,14 @@
 Easily modify the readwritememory of Brick Hill
 
 ## Installation
-In Command Prompt, run the command:
-`pip install pyhill`
+In Command Prompt, run the command `pip install pyhill`.  
+You must also install Pymem with the command `pip install pymem`.
   
     
 ## How to Use
 The first thing you should always do is use the function `attach()`. This attaches PyHill to Player.exe.
 
-##### Modify Memory
+#### Modify Memory
 To modify memory, use the `modify(variable, value)` function.  
 Here is an example:
 ```python
@@ -20,7 +20,7 @@ ph.modify("x", 2.5)    #Set your x position to 2.5
 ```
 This script attaches PyHill to the game and sets the player's x position to 2.5.
 
-##### Get Memory
+#### Get Memory
 To get memory, read the `get` class. Make sure to update the `get` class with the function `updateGet(only)`  
 Here is an example:
 ```python
@@ -33,7 +33,7 @@ while True:
     print(ph.get.x)    #Print the player's current x position
 ```
 
-##### Memory you can access
+#### Memory you can access
 - `x` - The player's x position
 - `y` - The player's y position
 - `z` - The player's z position
@@ -45,7 +45,7 @@ while True:
   
 More may be added in the future.
 
-##### Custom (Advanced)
+#### Custom (Advanced)
 You can also modify custom memory pointers. This can be done using the `modifyCustom(baseaddress, offsets, datatype, value)` function.  
 Here is an example:
 ```python

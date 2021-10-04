@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyhill",
-    version="0.0.1",
+    version="0.0.2",
     author="Yek",
     author_email="gwojtysiak34@gmail.com",
     description="Easily modify the readwritememory of Brick Hill.",
